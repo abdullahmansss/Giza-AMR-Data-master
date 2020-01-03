@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Giza AMR Data</string>
+    <string name="pleaseWait">Please wait</string>
+
+    <string name="add_new">Add New Meter</string>
+    <string name="title_activity_main">Add New Meter</string>
+    <string name="back">Back</string>
+    <string name="img1">Street pic</string>
+    <string name="img2">Building pic</string>
+    <string name="img3">Device pic</string>
+    <string name="meter_address">Address</string>
+    <string name="meter_number">Meter Number</string>
+    <string name="meter_owner_name">Full Name</string>
+    <string name="meter_owner_phone">Phone</string>
+    <string name="next">Next</string>
+    <string name="submit">Save</string>
+    <string name="permission_message_location">Please enable GPS to be able to determine the current location</string>
+    <string name="permission_denied_location">GPS permission is not granted/n
+        Please enable GPS to be able to determine the current location
+    </string>
+    <string name="meterVendor">Meter Vendor</string>
+    <string name="meterVendorOption1" translatable="false">Elster</string>
+    <string name="meterVendorOption2" translatable="false">Sensus</string>
+    <string name="meterVendorOption3" translatable="false">Hydrus</string>
+    <string name="meterState">Meter state</string>
+    <string name="meterStateOption1" translatable="false">no meter</string>
+    <string name="meterStateOption2" translatable="false">OK</string>
+    <string name="meterStateOption3" translatable="false">Not OK</string>
+    <string name="buildingUsage">Building type</string>
+    <string name="streetType">Building Street</string>
+    <string name="streetTypeOption3">Commercial</string>
+    <string name="streetTypeOption1">Industrial</string>
+    <string name="notes">Notes</string>
+    <string name="scan">Scan</string>
+    <string name="meter_owner_national_id">National ID</string>
+    <string name="lat">"latitude: "</string>
+    <string name="longi">"longitude: "</string>
+    <string name="successful_insertion">Meter registered successfully</string>
+    <string name="accuracy">"Accuracy: "</string>
+    <string name="requestLocation">Adjust Location</string>
+    <string name="export">Export Data</string>
+    <string name="old_meter_number">Old Meter Number</string>
+    <string name="old_meter_readings">Old Meter Readings</string>
+    <string name="electricity_meter_number">Electricity Meter Number</string>
+    <string name="custom_1">Custom 1</string>
+    <string name="custom_2">Custom 2</string>
+    <string name="custom_3">Custom 3</string>
+    <string name="custom_4">Custom 4</string>
+    <string name="custom_5">Custom 5</string>
+    <string name="custom_6">Custom 6</string>
+    <string name="custom_7">Custom 7</string>
+    <string name="custom_8">Custom 8</string>
+    <string name="custom_9">Custom 9</string>
+    <string name="custom_10">Custom 10</string>
+    <string name="maps">show on maps</string>
+    <string name="call">call now</string>
+    <string name="message">message now</string>
+    <string name="permissionNotGrantedForGeneratingReport">Oops, We don\'t have permission to generate the data
+        report!\\n Please check the permission and try again.
+    </string>
+    <string name="storagePermissionExplanation">"Thank you for using GizaAMRData we just need the storage permission to
+        be abe to generate the data file!. "
+    </string>
+    <string name="password">Please enter the login password</string>
+    <string name="login">Login</string>
+    <string name="msg_wrong_password">Wrong password!</string>
+    <string name="msg_empty_Field">Can\'t submit Empty field!</string>
+    <string name="edit_record">Edit</string>
+    <string name="read_data">Read Data</string>
+    <string name="sync">Sync with server</string>
+    <string name="settings">Settings</string>
+    <string name="actions_title">Actions</string>
+    <string name="search_by_dialog_title">Search by</string>
+    <string name="choose">Choose</string>
+    <string name="paste">Paste here</string>
+    <string name="codePrefix">Your code is</string>
+    <string name="copied">Text Copied</string>
+    <string name="pasted">Text Pasted</string>
+    <string name="username">user name</string>
+    <string name="pass">password</string>
+    <string name="search">Search</string>
+    <string name="gps10">GPS 0–10</string>
+    <string name="gps20">GPS 0–20</string>
+    <string name="gps50">GPS 0–50</string>
+    <string name="searchByGPS">Search by GPS</string>
+    <string name="searchByNumber">Search by meter number</string>
+    <string name="searchByOwner">Search by owner data</string>
+    <string name="baseUrl">Base URL</string>
+
+    <string-array name="actions_array">
+        <item>Install new</item>
+        <item>Install new box</item>
+        <item>Install new cables</item>
+        <item>Replace</item>
+        <item>Replace box</item>
+        <item>Replace cables</item>
+    </string-array>
+
+    <string-array name="search_by_array">
+        <item>Search by QR</item>
+        <item>Search by Number</item>
+        <item>Search by Name</item>
+        <item>Search by National ID</item>
+        <item>Search by GPS 0–10</item>
+        <item>Search by GPS 0–20</item>
+        <item>Search by GPS 0–50</item>
+    </string-array>
+    <string name="streetTypeOption2">Residential</string>
+    <string name="buildingTypeOption3">"apartment "</string>
+    <string name="buildingTypeOption2">Villa</string>
+    <string name="buildingUsageOption2">Residential</string>
+    <string name="buildingUsageOption3">Commercial</string>
+    <string name="buildingUsageOption1">Governmental</string>
+    <string name="msg_error_should_be_valid_url">Not valid URL, Please enter a valid URL</string>
+    <string name="buildingTypeOption1">local house</string>
+    <string name="buildingType">"Building description "</string>
+    <string name="logout">Logout</string>
+    <string name="version">Version %s</string>
+
+</resources>

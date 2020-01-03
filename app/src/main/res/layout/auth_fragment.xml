@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="140dp"
+            android:background="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/txtCode"
+            android:layout_height="140dp"/>
+
+
+    <TextView
+            android:layout_above="@+id/lyoutPassword"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textSize="20sp"
+            tools:text="Here is your code, \n HSLj-dndd-ndnd-dndn Please contact support to get the login passowrd"
+            android:textColor="@color/code_selector"
+            android:id="@+id/txtCode"/>
+
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@+id/lyoutPassword"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="50dp">
+
+        <Button
+                android:id="@+id/btnPaste"
+                android:layout_marginEnd="4dp"
+                android:layout_width="50dp"
+                android:background="@drawable/ic_paste_rounded"
+                android:layout_height="50dp"/>
+
+        <EditText
+                android:hint="@string/password"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/btnPaste"
+                android:textStyle="bold"
+                android:inputType="textPassword"
+                android:background="@drawable/bg_rounded"
+                android:padding="16dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif"
+                android:id="@+id/edtPassword"/>
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+            android:layout_below="@+id/lyoutPassword"
+            android:text="@string/login"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_green_corners_bg"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
+            android:textColor="@color/font_white"
+            android:id="@+id/btnLogin"/>
+</RelativeLayout>

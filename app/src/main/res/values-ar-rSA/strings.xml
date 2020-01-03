@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Giza AMR Data</string>
+    <string name="add_new">تسجيل جديد</string>
+    <string name="back">الرجوع</string>
+    <string name="img1">صورة الشارع</string>
+    <string name="img2">صورة المبني</string>
+    <string name="img3">صورة الجهاز</string>
+    <string name="meter_address">العنوان</string>
+    <string name="meter_number">رقم العداد</string>
+    <string name="meter_owner_name">الاسم</string>
+    <string name="meter_owner_phone">رقم التليفون</string>
+    <string name="next">التالي</string>
+    <string name="pleaseWait">انتظر من فضلك</string>
+    <string name="title_activity_main">تسجيل جديد</string>
+    <string name="submit">حفظ</string>
+    <string name="permission_denied_location">"لم يتم السماح باستخدام ال GPS،/n  من فضلك فعل خيار السماح باستخدام ال GPS لتحديد المواقع"</string>
+    <string name="permission_message_location">من فضلك فعل خيار السماح باستخدام ال GPS لتحديد المواقع</string>
+    <string name="meterVendor">الشركة المصنعة</string>
+    <string name="meterState">حالة العداد</string>
+    <string name="buildingUsage">وصف المبني</string>
+    <string name="notes">ملاحظات</string>
+    <string name="scan">"مسح رقم العداد "</string>
+    <string name="meter_owner_national_id">رقم الهوية</string>
+    <string name="lat">"خط الطول: "</string>
+    <string name="longi">"خط العرض: "</string>
+    <string name="successful_insertion">تم تسجيل العداد بنجاح</string>
+    <string name="accuracy">"الدقة: "</string>
+    <string name="requestLocation">حدد الموقع</string>
+    <string name="export">استخراج ملف قاعدة البيانات</string>
+    <string name="custom_1">مخصص ١</string>
+    <string name="custom_2">مخصص ٢</string>
+    <string name="custom_3">مخصص ۳</string>
+    <string name="custom_4">مخصص ٤</string>
+    <string name="custom_5">مخصص ٥</string>
+    <string name="custom_6">مخصص ٦</string>
+    <string name="custom_7">مخصص ٧</string>
+    <string name="custom_8">مخصص ۸</string>
+    <string name="custom_9">مخصص ۹</string>
+    <string name="custom_10">مخصص ١۰</string>
+    <string name="maps">الموقع علي الخريطة</string>
+    <string name="call">اتصل الان</string>
+    <string name="message">ارسل رسالة الان</string>
+    <string name="electricity_meter_number">رقم عداد الكهرباء</string>
+    <string name="old_meter_number">رقم العداد القديم</string>
+    <string name="old_meter_readings">قراءة العداد القديم</string>
+    <string name="permissionNotGrantedForGeneratingReport">"للآسف، ليس لدينا اذن لإنشاء ملف البيانات من فضلك افحص الإذن
+        ثم حاول مرة اخري. "
+    </string>
+    <string name="storagePermissionExplanation">شكراً لاستخدام GizaAMRData نحتاج فقط الي اذن استخدام الذاكرة لإنشاد ملف
+        البيانات
+    </string>
+    <string name="password">ادخل كلمة المرور للدخول</string>
+    <string name="login">الدخول</string>
+    <string name="msg_wrong_password">رقم مرور خاطئ</string>
+    <string name="edit_record">تعديل</string>
+    <string name="read_data">قراءة البيانات</string>
+    <string name="settings">الاعدادات</string>
+    <string name="sync">تزامن البيانات</string>
+    <string name="choose">اختار</string>
+    <string name="actions_title">الإجراءات</string>
+
+    <string-array name="actions_array">
+        <item>تركيب جديد</item>
+        <item>تركيب صندوق جديد</item>
+        <item>تركيب أسلاك جديدة</item>
+        <item>تغيير</item>
+        <item>تغيير صندوق</item>
+        <item>تغيير اسلاك</item>
+    </string-array>
+
+    <string name="paste">اطبع هنا</string>
+    <string name="codePrefix">"الكود هو "</string>
+    <string name="copied">تم النسخ</string>
+    <string name="pasted">تم اللصق</string>
+    <string name="pass">كلمة المرور</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="search">بحث</string>
+    <string name="search_by_dialog_title">بحث بواسطة</string>
+
+    <string-array name="search_by_array">
+        <item>بحث بواسطة رمز BarCode</item>
+        <item>بحث بواسطة الرقم</item>
+        <item>بحث بواسطة الإسم</item>
+        <item>بحث بواسطة الهوية الوطنية</item>
+        <item>بحث بواسطة الخرائط من ٠ الي ١٠ متر</item>
+        <item>بحث بواسطة الخرائط من ٠ الي ٢٠ متر</item>
+        <item>بحث بواسطة الخرائط من ٠ الي٥٠ متر</item>
+    </string-array>
+    <string name="gps10">٠ الي ١٠ متر</string>
+    <string name="gps20">٠ الي ٢٠ متر</string>
+    <string name="gps50">٠ الي ٥٠ متر</string>
+    <string name="searchByGPS">البحث بواسطة GPS</string>
+    <string name="searchByNumber">البحث برقم العداد</string>
+    <string name="searchByOwner">البحث بواسطة بيانات العميل</string>
+    <string name="baseUrl">عنوان السيرفر</string>
+    <string name="streetTypeOption3">تجاري</string>
+    <string name="streetTypeOption1">صناعي</string>
+    <string name="streetType">شارع العقار</string>
+    <string name="streetTypeOption2">سكني</string>
+    <string name="msg_empty_Field">حقل فارغ!</string>
+    <string name="buildingUsageOption3" >تجاري</string>
+    <string name="buildingUsageOption2">سكني</string>
+    <string name="buildingUsageOption1">حكومي</string>
+    <string name="buildingTypeOption2">فيلا</string>
+    <string name="buildingTypeOption3">شقة</string>
+    <string name="msg_error_should_be_valid_url">عنوان سيرفر غير صحيح، من فضلك ادخل عنواناً صحيحاً</string>
+    <string name="buildingType" >وصف العقار</string>
+    <string name="buildingTypeOption1">بيت شعبي</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="version">اصدار %s</string>
+
+</resources>

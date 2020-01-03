@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.giza.gizaamrdata"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 27
+        versionName "2.9.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //android supportcompat
+    implementation "androidx.appcompat:appcompat:$androidx_version"
+    implementation "androidx.gridlayout:gridlayout:$support_library_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
+    implementation "androidx.recyclerview:recyclerview:$androidx_version_recyclerview"
+    implementation "androidx.multidex:multidex:$support_multi_dex"
+    implementation "com.google.android.material:material:$androidx_material_version"
+    implementation "androidx.vectordrawable:vectordrawable:$androidx_vectorDrwable_version"
+
+    //ui
+    implementation "com.afollestad.material-dialogs:core:$dialogs_version"
+    implementation 'com.shuhart.stepview:stepview:1.4.0'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0-beta04'
+    implementation "android.arch.lifecycle:runtime:1.1.1"
+    kapt "android.arch.lifecycle:compiler:1.1.1"
+    implementation "com.github.firdausmaulan:GlideSlider:$glide_slider_version"
+
+    //utils
+    implementation "com.github.marlonlom:timeago:$time_ago_version"
+    implementation 'com.opencsv:opencsv:4.6'
+    // google vision
+    implementation 'com.google.android.gms:play-services-vision:18.0.0'
+
+    //retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$logging_interceptor_version"
+
+    //rx java
+    implementation "io.reactivex.rxjava2:rxjava:$rx_java_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rx_android_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    // Shimmer
+    implementation 'com.theartofdev.edmodo:android-image-cropper:1.2.1'
+    implementation 'com.github.jkwiecien:EasyImage:3.0.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    kapt "android.arch.lifecycle:compiler:$lifecycle_version"
+
+
+
+    // Room
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_version"
+    // optional - RxJava support for Room
+    implementation "androidx.room:room-rxjava2:$room_version"
+
+    //load images
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    //image compressor
+    implementation 'id.zelory:compressor:2.1.0'
+
+    //unit test
+    testImplementation "junit:junit:$junit_version"
+
+    //android testsBitmapUtils
+    androidTestImplementation "androidx.test:runner:$runner_version"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    implementation project(path: ':barcode-reader')
+
+    //Ripple color
+    implementation 'com.balysv:material-ripple:1.0.2'
+}

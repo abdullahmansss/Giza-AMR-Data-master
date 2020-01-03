@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/bg_white"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin"
+        tools:ignore="MissingDefaultResource">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:id="@+id/lytSearch"
+                  tools:visibility="visible"
+                  android:visibility="gone"
+                  android:layout_height="wrap_content">
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="@string/searchByNumber"
+                  android:textColor="@color/colorPrimary"
+                  android:textStyle="bold"
+                  android:id="@+id/txtSearchTitle"
+                  android:textSize="18sp"
+                  android:layout_height="wrap_content"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/txtInputEditText"
+                android:padding="8dp"
+                tools:text="١١٠٠٠٠"
+                android:background="@drawable/bg_rounded"
+                android:layout_height="50dp"
+                android:inputType="text"/>
+
+        <Button android:layout_width="wrap_content"
+                android:text="@string/scan"
+                android:id="@+id/btnScan"
+                android:paddingStart="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="@color/font_white"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:background="@drawable/btn_green_corners_bg"
+                android:layout_height="wrap_content"/>
+
+        <Button android:layout_width="wrap_content"
+                android:text="@string/search"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColor="@color/bg_white"
+                android:visibility="gone"
+                android:background="@drawable/btn_green_corners_bg"
+                android:drawableStart="@drawable/ic_search"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:id="@+id/lytSearchGPS"
+                  android:layout_below="@id/lytSearch"
+                  android:visibility="gone"
+                  tools:visibility="visible"
+                  android:layout_height="wrap_content">
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="@string/searchByGPS"
+                  android:textColor="@color/colorPrimary"
+                  android:textStyle="bold"
+                  android:textSize="18sp"
+                  android:layout_height="wrap_content"/>
+
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/radioGroup"
+                android:padding="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                tools:text="@string/search"
+                android:background="@drawable/bg_rounded"
+                android:layout_height="50dp">
+
+            <RadioButton android:layout_width="wrap_content"
+                         android:text="@string/gps10"
+                         app:buttonTint="@color/colorPrimary"
+                         android:id="@+id/radioButton1"
+                         android:textColor="@color/colorPrimary"
+                         android:layout_height="wrap_content"/>
+
+            <RadioButton android:layout_width="wrap_content"
+                         android:text="@string/gps20"
+                         android:id="@+id/radioButton2"
+                         app:buttonTint="@color/colorPrimary"
+                         android:textColor="@color/colorPrimary"
+                         android:layout_height="wrap_content"/>
+
+            <RadioButton android:layout_width="wrap_content"
+                         android:text="@string/gps50"
+                         android:id="@+id/radioButton3"
+                         app:buttonTint="@color/colorPrimary"
+                         android:textColor="@color/colorPrimary"
+                         android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+
+            <ProgressBar
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:id="@+id/progressbar"
+                    android:layout_marginTop="24dp"
+                    android:indeterminate="true"
+                    android:visibility="visible"/>
+
+            <TextView
+                    android:id="@+id/txtLat"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/lat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/txtLong"
+                    android:text="@string/longi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/txtAccuracy"
+                    android:text="@string/accuracy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <Button android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/requestLocation"
+                    android:id="@+id/btnRequestLocation"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textColor="@color/font_white"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_green_corners_bg"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/lytSearchGPS"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                tools:listitem="@layout/item_meter_view"
+                tools:itemCount="5"
+                android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

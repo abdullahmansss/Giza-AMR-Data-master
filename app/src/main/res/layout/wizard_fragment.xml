@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/bg"
+        android:layout_height="match_parent">
+
+    <com.shuhart.stepview.StepView
+            android:id="@+id/step_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:sv_selectedCircleColor="@color/colorAccent"
+            app:sv_selectedTextColor="@color/colorAccent"
+            app:sv_stepLineWidth="1dp"
+            app:sv_stepPadding="4dp"
+            app:sv_nextTextColor="@color/colorAccent"
+            app:sv_nextStepLineColor="@color/bg_white"
+            app:sv_doneCircleColor="@color/colorAccent"
+            app:sv_doneStepLineColor="@color/colorAccent"
+            app:sv_doneCircleRadius="12dp"
+            app:sv_selectedCircleRadius="12dp"
+            app:sv_selectedStepNumberColor="@color/font_white"
+            app:sv_stepViewStyle="@style/StepView"
+            app:sv_doneStepMarkColor="@color/bg_white"
+            app:sv_stepNumberTextSize="12sp"
+            app:sv_animationType="Line"
+            app:sv_stepsNumber="5"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+            android:layout_below="@+id/step_view"
+            android:id="@+id/viewPagerWizard"
+            android:layout_above="@id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:background="@color/bg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                >
+
+            <Button
+                    android:padding="8dp"
+                    android:id="@+id/btnNext"
+                    android:text="@string/next"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_left_white_24dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/font_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+                android:id="@+id/cardBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                >
+
+            <Button
+                    android:id="@+id/btnBack"
+                    android:padding="8dp"
+                    android:text="@string/back"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_right_white_24dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/font_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

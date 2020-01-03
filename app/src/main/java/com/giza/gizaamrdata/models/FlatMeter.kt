@@ -1,0 +1,32 @@
+package com.giza.gizaamrdata.models
+
+data class FlatMeter(
+    var Address: String = "",
+    var Building_Type: String = "",
+    var Building_Usage: String? = "",
+    var Custom1: String = "",
+    var Custom2: String = "",
+    var Custom3: String = "",
+    var Custom4: String = "",
+    var Custom5: String = "",
+    var Custom6: String = "",
+    var Custom7: String = "",
+    var Custom8: String = "",
+    var Custom9: String = "",
+    var Custom10: String = "",
+    var Electricity_Meter_Number: String = "",
+    var Location_Accuracy: String = "",
+    var Location_Latitude: String = "",
+    var Location_Longitude: String = "",
+    var Notes: String = "",
+    var Number: String = "",
+    var Old_Meter_Number: String = "",
+    var Old_Meter_Readings: String = "",
+    var Owner_Name: String = "",
+    var Owner_National_id: String = "",
+    var Owner_Phone: String = "",
+    var State: String = "",
+    var Street_Type: String = "",
+    var Vendor: String = "",
+    var Area: String = ""
+)

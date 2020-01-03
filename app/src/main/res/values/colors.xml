@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1D82DC</color>
+    <color name="colorPrimaryDark">#044F8F</color>
+    <color name="colorAccent">#1D82DC</color>
+    <color name="search_bg">#679ED8</color>
+
+    <color name="bg_blue_deep">#242A38</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg">#f8f8f8</color>
+    <color name="bg_gray">#C5C9CC</color>
+    <color name="gray_line">#59979797</color>
+    <color name="gray_line1">#979797</color>
+
+    <color name="font_gray">#A6AFC6</color>
+    <color name="font_blue_deep">#242A38</color>
+    <color name="font_white">#ffffff</color>
+
+    <color name="icon_gray">#aeacac</color>
+    <color name="reject_red">#f00000</color>
+    <color name="accept_green">#0f0</color>
+    <color name="grassy_green">#45ad00</color>
+    <color name="dark_sky_blue">#3498db</color>
+    <color name="pending_color">#d1ad4b</color>
+
+
+    //text colors
+    <color name="textTitle">#4d4d4d</color>
+
+    //styles
+    <color name="white_transparent">#57fdfdfd</color>
+    <color name="blue">#2095f2</color>
+    <color name="dark_blue">#0c75c9</color>
+    <color name="dark_blue2">#247eba</color>
+    <color name="blue_transparent">#772095f2</color>
+    <color name="light_blue">#42A5F5</color>
+    <color name="pink">#cf3267</color>
+    <color name="dark_gray">#494949</color>
+    <color name="gray">#878787</color>
+    <color name="light_gray">#d2d2d2</color>
+    <color name="above_very_light_gray">#dfdfdf</color>
+    <color name="very_light_gray">#f3f3f3</color>
+    <color name="light_gray1">#ededed</color>
+    <color name="green">#19a355</color>
+    <color name="green1">#5aa903</color>
+
+    <color name="red">#ef1f2e</color>
+    <color name="golden">#fadb2b</color>
+    <color name="orange">#ff8c00</color>
+    <color name="light_orange">#ffac23</color>
+    <color name="light_orange2">#f18a58</color>
+
+    <color name="black_transparent">#83000000</color>
+    <color name="notification_item_unread_color">#e7f3fe</color>
+    <color name="darkish_red">#ad0015</color>
+    <color name="darkish_red2">#bd041b</color>
+    <color name="toolbar_separator_gray">#d8d8d8</color>
+    <color name="disabled_gray">#afafaf</color>
+    <color name="greyish_brown">#484848</color>
+    <color name="gray_text">#808080</color>
+    <color name="gray_text1">#696969</color>
+    <color name="progress_bar_bg">#e2e2e2</color>
+    <color name="dark_blue_grey">#222f48</color>
+    <color name="black">#000000</color>
+    <color name="transparent_black">#99000000</color>
+    <color name="receipt_bg_text_color">#585858</color>
+    <color name="neon_green">#86ff00</color>
+    <color name="bg_off_white">#e6e6e6</color>
+</resources>

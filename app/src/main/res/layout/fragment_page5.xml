@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/bg"
+                android:layout_height="match_parent"
+                tools:context=".ui.wizard.pages.Page5">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent"
+                            android:id="@+id/img1Layout"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/img1"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_height="wrap_content"/>
+
+                <ImageButton android:layout_width="40dp"
+                             android:id="@+id/btnPick1"
+                             android:layout_toStartOf="@id/img1"
+                             android:layout_alignParentTop="true"
+                             app:srcCompat="@drawable/ic_gallery"
+                             android:layout_height="40dp"/>
+
+                <ImageButton android:layout_width="40dp"
+                             android:layout_alignBottom="@id/img1"
+                             android:layout_toStartOf="@id/img1"
+                             app:srcCompat="@drawable/ic_camera"
+                             android:id="@+id/btnCam1"
+                             android:layout_height="40dp"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/img1"
+                        app:srcCompat="@drawable/ic_street"
+                        android:layout_marginStart="20dp"
+                        android:background="@color/green1"
+                        android:scaleType="fitXY"
+                        android:layout_height="100dp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:id="@+id/img2Layout"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/img2"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_height="wrap_content"/>
+
+                <ImageButton android:layout_width="40dp"
+                             android:id="@+id/btnPick2"
+                             android:layout_toStartOf="@id/img2"
+                             android:layout_alignParentTop="true"
+                             app:srcCompat="@drawable/ic_gallery"
+                             android:layout_height="40dp"/>
+
+                <ImageButton android:layout_width="40dp"
+                             android:layout_alignBottom="@id/img2"
+                             android:layout_toStartOf="@id/img2"
+                             app:srcCompat="@drawable/ic_camera"
+                             android:id="@+id/btnCam2"
+                             android:layout_height="40dp"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/img2"
+                        app:srcCompat="@drawable/ic_building"
+                        android:layout_marginStart="20dp"
+                        android:background="@color/green1"
+                        android:scaleType="fitXY"
+                        android:layout_height="100dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent"
+                            android:id="@+id/img3Layout"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                <TextView
+                        android:text="@string/img3"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_height="wrap_content"/>
+
+                <ImageButton android:layout_width="40dp"
+                             android:id="@+id/btnPick3"
+                             android:layout_toStartOf="@id/img3"
+                             android:layout_alignParentTop="true"
+                             app:srcCompat="@drawable/ic_gallery"
+                             android:layout_height="40dp"/>
+
+                <ImageButton android:layout_width="40dp"
+                             android:id="@+id/btnCam3"
+                             android:layout_alignBottom="@id/img3"
+                             android:layout_toStartOf="@id/img3"
+                             app:srcCompat="@drawable/ic_camera"
+                             android:layout_height="40dp"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="100dp"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/img3"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/ic_device"
+                        android:layout_marginStart="20dp"
+                        android:background="@color/green1"
+                        android:layout_height="100dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

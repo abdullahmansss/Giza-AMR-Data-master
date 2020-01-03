@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:padding="16dp"
+        tools:context=".ui.wizard.pages.Page4">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ProgressBar
+                    android:id="@+id/progressbar"
+                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginTop="24dp"
+                    android:indeterminate="true"
+                    android:visibility="visible" />
+
+            <TextView
+                    android:id="@+id/txtLat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/lat" />
+
+            <TextView
+                    android:id="@+id/txtLong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/longi" />
+
+            <TextView
+                    android:id="@+id/txtAccuracy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/accuracy" />
+
+            <Button
+                    android:id="@+id/btnRequestLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_green_corners_bg"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/requestLocation"
+                    android:textColor="@color/font_white"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
